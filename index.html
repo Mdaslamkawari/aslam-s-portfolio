@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD Aslam Kawari — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <nav class="side-nav" id="sideNav">
+    <a href="#hero"           class="nav-dot active"  data-label="Home"></a>
+    <a href="#about"          class="nav-dot"          data-label="About"></a>
+    <a href="#skills"         class="nav-dot"          data-label="Skills"></a>
+    <a href="#projects"       class="nav-dot"          data-label="Projects"></a>
+    <a href="#experience"     class="nav-dot"          data-label="Timeline"></a>
+    <a href="#certifications" class="nav-dot"          data-label="Certs"></a>
+    <a href="#contact"        class="nav-dot"          data-label="Contact"></a>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="terminal-line">
+        <span class="t-prefix">~/portfolio</span>
+        <span class="t-cmd">&nbsp;$&nbsp;whoami</span>
+      </div>
+      <h1 class="glitch" data-text="MD Aslam Kawari">MD Aslam Kawari</h1>
+      <div class="role-line">
+        <span class="t-bracket">[</span>
+        <span id="typedRole"></span>
+        <span class="cursor-blink">█</span>
+        <span class="t-bracket">]</span>
+      </div>
+      <p class="hero-bio">
+        IT student &amp; Frontend Developer · Building human-centred web experiences ·
+        President, AI &amp; Robotics Club · Based in Nepal
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="mailto:kawarimdaslam@gmail.com" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="social-bar">
+        <a href="https://www.linkedin.com/in/md-aslam-kawari-" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+        <span class="sep">/</span>
+        <a href="mailto:kawarimdaslam@gmail.com" class="social-link">Email</a>
+        <span class="sep">/</span>
+        <a href="tel:9814865722" class="social-link">+977 9814865722</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-tag">&lt;about /&gt;</div>
+      <div class="about-grid">
+        <div class="about-text animate-on-scroll">
+          <h2 class="section-title">Who am I?</h2>
+          <p>
+            I'm MD Aslam Kawari — an enthusiastic IT student at South Asian Institute of Management,
+            Kathmandu, with a genuine passion for building things on the web. I work with
+            <strong>HTML, CSS, JavaScript</strong>, and have a strong eye for <strong>UI/UX design</strong>.
+          </p>
+          <p>
+            Beyond code, I led the <strong>AI &amp; Robotics Club</strong> as president — sharpening my
+            communication, leadership, and collaborative instincts. I believe great software is built by
+            curious people who never stop asking <em>why</em>.
+          </p>
+          <div class="quick-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="2022">0</span>
+              <span class="stat-label">Design Winner</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-side animate-on-scroll" style="--delay:0.2s">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-key">Location</span>
+              <span class="info-val">Mahottari, Nepal</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Studying</span>
+              <span class="info-val">B.Sc. CSIT @ SAIM</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Focus</span>
+              <span class="info-val">Frontend Dev</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Status</span>
+              <span class="info-val available">Open to Work</span>
+            </div>
+          </div>
+          <div class="achievement-badge animate-on-scroll" style="--delay:0.4s">
+            <div class="badge-glow"></div>
+            <div class="badge-icon">🏆</div>
+            <div class="badge-text">
+              <strong>Inter-School Web Design Winner</strong>
+              <span>2022 · Kathmandu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-tag">&lt;skills /&gt;</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card animate-on-scroll">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>HTML5</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-card animate-on-scroll" style="--delay:0.1s">
+          <div class="skill-icon">{ }</div>
+          <h3>CSS3</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-card animate-on-scroll" style="--delay:0.15s">
+          <div class="skill-icon">JS</div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card animate-on-scroll" style="--delay:0.2s">
+          <div class="skill-icon">UX</div>
+          <h3>UI/UX Design</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card animate-on-scroll" style="--delay:0.25s">
+          <div class="skill-icon">☕</div>
+          <h3>Java</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="65"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-card animate-on-scroll" style="--delay:0.3s">
+          <div class="skill-icon">C</div>
+          <h3>C Language</h3>
+          <div class="skill-bar"><div class="skill-fill" data-pct="60"></div></div>
+          <span class="skill-pct">60%</span>
+        </div>
+      </div>
+      <div class="other-skills">
+        <span class="tag">Responsive Design</span>
+        <span class="tag">localStorage</span>
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Team Leadership</span>
+        <span class="tag">AI &amp; Robotics</span>
+        <span class="tag">Authentication Flows</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-tag">&lt;projects /&gt;</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+        <div class="project-card featured animate-on-scroll">
+          <div class="project-num">01</div>
+          <div class="project-content">
+            <div class="project-status">Featured Project</div>
+            <h3 class="project-title">AutoJodo</h3>
+            <p class="project-tagline">Vehicle Service Booking Web App</p>
+            <p class="project-desc">
+              A complete frontend application built from scratch. AutoJodo streamlines vehicle
+              service bookings with a full authentication system, user dashboard, admin panel,
+              and a rating/review system — entirely client-side using localStorage for persistent data.
+            </p>
+            <div class="project-features">
+              <span>Booking System</span>
+              <span>Auth Flow</span>
+              <span>Admin Panel</span>
+              <span>Rating System</span>
+              <span>Dashboard</span>
+            </div>
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>localStorage</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card coming animate-on-scroll" style="--delay:0.15s">
+          <div class="project-num">02</div>
+          <div class="project-content">
+            <div class="project-status muted">Coming Soon</div>
+            <h3 class="project-title">Next Project</h3>
+            <p class="project-desc">Something new is in progress — stay tuned.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TIMELINE ═══════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-tag">&lt;timeline /&gt;</div>
+      <h2 class="section-title">Experience &amp; Education</h2>
+      <div class="timeline">
+
+        <div class="tl-item animate-on-scroll">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-badge work">Work</div>
+            <span class="tl-date">Jun 2025 – Present</span>
+            <h3>Frontend Developer</h3>
+            <p>Project-Based · Building real-world frontend applications using HTML, CSS, and JavaScript</p>
+          </div>
+        </div>
+
+        <div class="tl-item animate-on-scroll" style="--delay:0.1s">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-badge study">Study</div>
+            <span class="tl-date">Nov 2024 – Present</span>
+            <h3>B.Sc. CSIT</h3>
+            <p>South Asian Institute of Management · Kathmandu</p>
+          </div>
+        </div>
+
+        <div class="tl-item animate-on-scroll" style="--delay:0.2s">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-badge study">Study</div>
+            <span class="tl-date">Jul 2021 – Sep 2023</span>
+            <h3>+2 Science</h3>
+            <p>Kathmandu Model Secondary School · Kathmandu</p>
+          </div>
+        </div>
+
+        <div class="tl-item animate-on-scroll" style="--delay:0.3s">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-badge study">Study</div>
+            <span class="tl-date">May 2021</span>
+            <h3>SEE — Secondary Education Examination</h3>
+            <p>Sinha Public School · Janakpur</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CERTIFICATIONS ═══════════ -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-tag">&lt;certifications /&gt;</div>
+      <h2 class="section-title">Certs &amp; Achievements</h2>
+      <div class="cert-grid">
+        <div class="cert-card animate-on-scroll">
+          <div class="cert-icon">📜</div>
+          <div class="cert-info">
+            <h3>Introduction to Frontend Development</h3>
+            <span>Coursera · 2023</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card animate-on-scroll" style="--delay:0.1s">
+          <div class="cert-icon">📜</div>
+          <div class="cert-info">
+            <h3>Responsive Web Design</h3>
+            <span>FreeCodeCamp</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card animate-on-scroll highlight" style="--delay:0.2s">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-info">
+            <h3>Web Design Competition Winner</h3>
+            <span>Inter-School Level · 2022, Kathmandu</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card animate-on-scroll" style="--delay:0.3s">
+          <div class="cert-icon">🔬</div>
+          <div class="cert-info">
+            <h3>Tech For Change Workshop</h3>
+            <span>KMC · 2022</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-tag">&lt;contact /&gt;</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Open to opportunities, collaborations, and conversations.</p>
+      <div class="contact-grid">
+        <div class="contact-links animate-on-scroll">
+          <a href="mailto:kawarimdaslam@gmail.com" class="contact-item">
+            <span class="ci-icon">✉</span>
+            <div class="ci-body">
+              <span class="ci-label">Email</span>
+              <span class="ci-val">kawarimdaslam@gmail.com</span>
+            </div>
+            <span class="ci-arrow">→</span>
+          </a>
+          <a href="tel:9814865722" class="contact-item">
+            <span class="ci-icon">☎</span>
+            <div class="ci-body">
+              <span class="ci-label">Phone</span>
+              <span class="ci-val">+977 9814865722</span>
+            </div>
+            <span class="ci-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/md-aslam-kawari-" target="_blank" rel="noopener" class="contact-item">
+            <span class="ci-icon">in</span>
+            <div class="ci-body">
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-val">md-aslam-kawari</span>
+            </div>
+            <span class="ci-arrow">→</span>
+          </a>
+          <div class="contact-item no-link">
+            <span class="ci-icon">⊙</span>
+            <div class="ci-body">
+              <span class="ci-label">Location</span>
+              <span class="ci-val">Mahottari, Nepal</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta animate-on-scroll" style="--delay:0.2s">
+          <div class="cta-box">
+            <div class="cta-pulse"></div>
+            <div class="cta-dot"></div>
+            <h3>Available for opportunities</h3>
+            <p>Looking for internships, freelance projects, and collaborative work in frontend development.</p>
+            <a href="mailto:kawarimdaslam@gmail.com" class="btn-primary">Send a Message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Designed &amp; Built by <strong>MD Aslam Kawari</strong></p>
+      <p class="footer-sub">SAIM · Kathmandu, Nepal · 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
